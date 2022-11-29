@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/642.fa71ef24.chunk.js","mappings":"2JAOE,UAPiB,WAEf,OACC,uCAEF,C","sources":["components/Wallet/Statistics.jsx"],"sourcesContent":["const Statistics = () => {\n\n    return (\n     <div>Statistics</div>\n    );\n  };\n  \n  export default Statistics;"],"names":[],"sourceRoot":""}
