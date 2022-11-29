@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/731.d07a4771.chunk.js","mappings":"2JAOE,UAPmB,WAEjB,OACC,yCAEF,C","sources":["components/Wallet/Transactions.jsx"],"sourcesContent":["const Transactions = () => {\n\n    return (\n     <div>Transactions</div>\n    );\n  };\n  \n  export default Transactions;"],"names":[],"sourceRoot":""}
