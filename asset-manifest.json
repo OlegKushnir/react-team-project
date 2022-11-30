@@ -1,32 +1,34 @@
 {
   "files": {
     "main.css": "/react-team-project/static/css/main.7ffdad9b.css",
-    "main.js": "/react-team-project/static/js/main.1fec5c70.js",
+    "main.js": "/react-team-project/static/js/main.4341a93a.js",
     "static/css/964.92d994de.chunk.css": "/react-team-project/static/css/964.92d994de.chunk.css",
-    "static/js/964.c98aca97.chunk.js": "/react-team-project/static/js/964.c98aca97.chunk.js",
+    "static/js/964.6192a7c9.chunk.js": "/react-team-project/static/js/964.6192a7c9.chunk.js",
     "static/css/32.92d994de.chunk.css": "/react-team-project/static/css/32.92d994de.chunk.css",
     "static/js/32.3190ce66.chunk.js": "/react-team-project/static/js/32.3190ce66.chunk.js",
     "static/js/176.aa300d41.chunk.js": "/react-team-project/static/js/176.aa300d41.chunk.js",
-    "static/js/642.fa71ef24.chunk.js": "/react-team-project/static/js/642.fa71ef24.chunk.js",
+    "static/js/396.b48a9963.chunk.js": "/react-team-project/static/js/396.b48a9963.chunk.js",
     "static/css/865.ffa01055.chunk.css": "/react-team-project/static/css/865.ffa01055.chunk.css",
     "static/js/865.6d0d4a96.chunk.js": "/react-team-project/static/js/865.6d0d4a96.chunk.js",
     "static/js/705.223d48dd.chunk.js": "/react-team-project/static/js/705.223d48dd.chunk.js",
+    "static/js/77.48135a94.chunk.js": "/react-team-project/static/js/77.48135a94.chunk.js",
     "static/media/sprite.svg": "/react-team-project/static/media/sprite.5de623d034da6b3245fb045eb90ed13a.svg",
     "index.html": "/react-team-project/index.html",
     "main.7ffdad9b.css.map": "/react-team-project/static/css/main.7ffdad9b.css.map",
-    "main.1fec5c70.js.map": "/react-team-project/static/js/main.1fec5c70.js.map",
+    "main.4341a93a.js.map": "/react-team-project/static/js/main.4341a93a.js.map",
     "964.92d994de.chunk.css.map": "/react-team-project/static/css/964.92d994de.chunk.css.map",
-    "964.c98aca97.chunk.js.map": "/react-team-project/static/js/964.c98aca97.chunk.js.map",
+    "964.6192a7c9.chunk.js.map": "/react-team-project/static/js/964.6192a7c9.chunk.js.map",
     "32.92d994de.chunk.css.map": "/react-team-project/static/css/32.92d994de.chunk.css.map",
     "32.3190ce66.chunk.js.map": "/react-team-project/static/js/32.3190ce66.chunk.js.map",
     "176.aa300d41.chunk.js.map": "/react-team-project/static/js/176.aa300d41.chunk.js.map",
-    "642.fa71ef24.chunk.js.map": "/react-team-project/static/js/642.fa71ef24.chunk.js.map",
+    "396.b48a9963.chunk.js.map": "/react-team-project/static/js/396.b48a9963.chunk.js.map",
     "865.ffa01055.chunk.css.map": "/react-team-project/static/css/865.ffa01055.chunk.css.map",
     "865.6d0d4a96.chunk.js.map": "/react-team-project/static/js/865.6d0d4a96.chunk.js.map",
-    "705.223d48dd.chunk.js.map": "/react-team-project/static/js/705.223d48dd.chunk.js.map"
+    "705.223d48dd.chunk.js.map": "/react-team-project/static/js/705.223d48dd.chunk.js.map",
+    "77.48135a94.chunk.js.map": "/react-team-project/static/js/77.48135a94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ffdad9b.css",
-    "static/js/main.1fec5c70.js"
+    "static/js/main.4341a93a.js"
   ]
 }
