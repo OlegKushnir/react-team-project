@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-team-project/static/css/main.f4bf9f03.css",
-    "main.js": "/react-team-project/static/js/main.267bb4e7.js",
+    "main.css": "/react-team-project/static/css/main.cc0f7206.css",
+    "main.js": "/react-team-project/static/js/main.fc322ed0.js",
     "static/css/964.92d994de.chunk.css": "/react-team-project/static/css/964.92d994de.chunk.css",
     "static/js/964.6192a7c9.chunk.js": "/react-team-project/static/js/964.6192a7c9.chunk.js",
     "static/css/32.92d994de.chunk.css": "/react-team-project/static/css/32.92d994de.chunk.css",
@@ -17,10 +17,12 @@
     "static/js/232.591d8f85.chunk.js": "/react-team-project/static/js/232.591d8f85.chunk.js",
     "static/media/CurrencyBackGrnd.png": "/react-team-project/static/media/CurrencyBackGrnd.7e53f5630f9a15720701.png",
     "static/media/sprite.svg": "/react-team-project/static/media/sprite.5de623d034da6b3245fb045eb90ed13a.svg",
+    "static/media/CurrencyBackGrnd_tab.png": "/react-team-project/static/media/CurrencyBackGrnd_tab.55e3aaa381e9ea1a0c73.png",
     "static/media/elipse_desktop.png": "/react-team-project/static/media/elipse_desktop.4d181c1296709d634b24.png",
+    "static/media/CurrencyBackGrnd_mob.png": "/react-team-project/static/media/CurrencyBackGrnd_mob.1eaaaff48f16491283e1.png",
     "index.html": "/react-team-project/index.html",
-    "main.f4bf9f03.css.map": "/react-team-project/static/css/main.f4bf9f03.css.map",
-    "main.267bb4e7.js.map": "/react-team-project/static/js/main.267bb4e7.js.map",
+    "main.cc0f7206.css.map": "/react-team-project/static/css/main.cc0f7206.css.map",
+    "main.fc322ed0.js.map": "/react-team-project/static/js/main.fc322ed0.js.map",
     "964.92d994de.chunk.css.map": "/react-team-project/static/css/964.92d994de.chunk.css.map",
     "964.6192a7c9.chunk.js.map": "/react-team-project/static/js/964.6192a7c9.chunk.js.map",
     "32.92d994de.chunk.css.map": "/react-team-project/static/css/32.92d994de.chunk.css.map",
@@ -36,7 +38,7 @@
     "232.591d8f85.chunk.js.map": "/react-team-project/static/js/232.591d8f85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4bf9f03.css",
-    "static/js/main.267bb4e7.js"
+    "static/css/main.cc0f7206.css",
+    "static/js/main.fc322ed0.js"
   ]
 }
