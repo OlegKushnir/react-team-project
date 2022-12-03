@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-team-project/static/css/main.1c24aff3.css",
-    "main.js": "/react-team-project/static/js/main.99db68a2.js",
+    "main.js": "/react-team-project/static/js/main.9828ace2.js",
     "static/css/964.16e09ff6.chunk.css": "/react-team-project/static/css/964.16e09ff6.chunk.css",
     "static/js/964.fa2aee66.chunk.js": "/react-team-project/static/js/964.fa2aee66.chunk.js",
     "static/css/32.16e09ff6.chunk.css": "/react-team-project/static/css/32.16e09ff6.chunk.css",
     "static/js/32.678b13a0.chunk.js": "/react-team-project/static/js/32.678b13a0.chunk.js",
-    "static/css/54.67187dba.chunk.css": "/react-team-project/static/css/54.67187dba.chunk.css",
-    "static/js/54.edd747cd.chunk.js": "/react-team-project/static/js/54.edd747cd.chunk.js",
+    "static/css/54.a9e7adfe.chunk.css": "/react-team-project/static/css/54.a9e7adfe.chunk.css",
+    "static/js/54.c052e4d3.chunk.js": "/react-team-project/static/js/54.c052e4d3.chunk.js",
     "static/css/493.16263445.chunk.css": "/react-team-project/static/css/493.16263445.chunk.css",
     "static/js/493.2adc1e46.chunk.js": "/react-team-project/static/js/493.2adc1e46.chunk.js",
-    "static/css/218.dadc3e73.chunk.css": "/react-team-project/static/css/218.dadc3e73.chunk.css",
-    "static/js/218.1fe51ccd.chunk.js": "/react-team-project/static/js/218.1fe51ccd.chunk.js",
+    "static/css/218.b3f4ec6a.chunk.css": "/react-team-project/static/css/218.b3f4ec6a.chunk.css",
+    "static/js/218.d264be3a.chunk.js": "/react-team-project/static/js/218.d264be3a.chunk.js",
     "static/js/705.223d48dd.chunk.js": "/react-team-project/static/js/705.223d48dd.chunk.js",
     "static/js/344.411bb02a.chunk.js": "/react-team-project/static/js/344.411bb02a.chunk.js",
     "static/css/49.bc7da695.chunk.css": "/react-team-project/static/css/49.bc7da695.chunk.css",
@@ -36,17 +36,17 @@
     "static/media/minus.svg": "/react-team-project/static/media/minus.c1930871236002c803c7.svg",
     "static/media/selectArrow.svg": "/react-team-project/static/media/selectArrow.77b989b3724c69122981.svg",
     "main.1c24aff3.css.map": "/react-team-project/static/css/main.1c24aff3.css.map",
-    "main.99db68a2.js.map": "/react-team-project/static/js/main.99db68a2.js.map",
+    "main.9828ace2.js.map": "/react-team-project/static/js/main.9828ace2.js.map",
     "964.16e09ff6.chunk.css.map": "/react-team-project/static/css/964.16e09ff6.chunk.css.map",
     "964.fa2aee66.chunk.js.map": "/react-team-project/static/js/964.fa2aee66.chunk.js.map",
     "32.16e09ff6.chunk.css.map": "/react-team-project/static/css/32.16e09ff6.chunk.css.map",
     "32.678b13a0.chunk.js.map": "/react-team-project/static/js/32.678b13a0.chunk.js.map",
-    "54.67187dba.chunk.css.map": "/react-team-project/static/css/54.67187dba.chunk.css.map",
-    "54.edd747cd.chunk.js.map": "/react-team-project/static/js/54.edd747cd.chunk.js.map",
+    "54.a9e7adfe.chunk.css.map": "/react-team-project/static/css/54.a9e7adfe.chunk.css.map",
+    "54.c052e4d3.chunk.js.map": "/react-team-project/static/js/54.c052e4d3.chunk.js.map",
     "493.16263445.chunk.css.map": "/react-team-project/static/css/493.16263445.chunk.css.map",
     "493.2adc1e46.chunk.js.map": "/react-team-project/static/js/493.2adc1e46.chunk.js.map",
-    "218.dadc3e73.chunk.css.map": "/react-team-project/static/css/218.dadc3e73.chunk.css.map",
-    "218.1fe51ccd.chunk.js.map": "/react-team-project/static/js/218.1fe51ccd.chunk.js.map",
+    "218.b3f4ec6a.chunk.css.map": "/react-team-project/static/css/218.b3f4ec6a.chunk.css.map",
+    "218.d264be3a.chunk.js.map": "/react-team-project/static/js/218.d264be3a.chunk.js.map",
     "705.223d48dd.chunk.js.map": "/react-team-project/static/js/705.223d48dd.chunk.js.map",
     "344.411bb02a.chunk.js.map": "/react-team-project/static/js/344.411bb02a.chunk.js.map",
     "49.bc7da695.chunk.css.map": "/react-team-project/static/css/49.bc7da695.chunk.css.map",
@@ -55,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.1c24aff3.css",
-    "static/js/main.99db68a2.js"
+    "static/js/main.9828ace2.js"
   ]
 }
