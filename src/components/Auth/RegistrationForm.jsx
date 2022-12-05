@@ -13,6 +13,7 @@ import React from 'react';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 export const mediaQueriesAuth = {
   mobile: '(min-width: 320px) and (max-width: 767px)',
   tablet: '(min-width: 768px) and (max-width: 1279px)',
@@ -64,21 +65,22 @@ const Register = () => {
       );
     }
   };
-  const handlePassword = e => {
+  const handlePassword = (password, errors) => {
     const good = { width: '100%', backgroundColor: '#24cca7' };
     const normally = { width: '45%', backgroundColor: 'orange' };
     const badly = { width: '25%', backgroundColor: 'red' };
     const refresh = { width: '0%', backgroundColor: '#E5F1EF' };
-    if (e.length > 0 && e.length < 3) {
+    if (password.length > 0 && password.length < 3) {
+      notify(errors.email);
       setChek(refresh);
     }
-    if (e.length > 3 && e.length < 5) {
+    if (password.length > 3 && password.length < 5) {
       setChek(badly);
     }
-    if (e.length >= 6 && e.length <= 8) {
+    if (password.length >= 6 && password.length <= 8) {
       setChek(normally);
     }
-    if (e.length >= 8 && e.length <= 12) {
+    if (password.length >= 8 && password.length <= 12) {
       setChek(good);
     }
   };

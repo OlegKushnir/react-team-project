@@ -22,14 +22,13 @@ const RegistrationPage = ({ handlePassword, handleSubmit, chek }) => {
           userpassword: '',
         }}
         validate={({ password, userpassword, email }) => {
-          handlePassword(password);
           const errors = {};
           if (!email) {
             errors.email = 'Required';
           } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3,}$/i.test(email)) {
-            errors.email ='Invalid email address';
+            errors.email = 'Invalid email address';
           }
-          return errors;
+          handlePassword(password, errors);
         }}
         onSubmit={handleSubmit}
       >
