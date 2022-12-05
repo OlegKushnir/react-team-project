@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Photo = ({ img }) => {
   return (
     <div className={s.aside}>
-      <img src={img} alt="Photo" className={s.image} />
+      <img src={img} alt="logo" className={s.image} />
       <h2 className={s.title}>Finance App</h2>
     </div>
   );

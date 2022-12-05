@@ -14,6 +14,7 @@ import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 export const mediaQueriesAuth = {
   mobile: '(min-width: 320px) and (max-width: 767px)',
   tablet: '(min-width: 768px) and (max-width: 1279px)',
@@ -21,6 +22,7 @@ export const mediaQueriesAuth = {
 };
 const Register = () => {
   const [chek, setChek] = useState();
+
   const notify = e =>
     toast.error(e, {
       position: 'top-right',
