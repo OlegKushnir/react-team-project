@@ -4,3 +4,4 @@ export const getAuthError = state => state.auth.error;
 export const getAuthBalance = state => state.auth.balance;
 export const getAuthRegisterUser = state => state.auth.registerUser;
 export const getIsFetchingCurrent = state => state.auth.fetchCurrentUser;
+export const getAuthToken = state => state.auth.token;

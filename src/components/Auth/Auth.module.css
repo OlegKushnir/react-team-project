@@ -1,6 +1,40 @@
 .section {
   position: relative;
   margin: 0 auto;
+  color: #FF6596;
+}
+.title{
+  color: black;
+}
+
+
+.modal{
+
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.modal_text{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5px;
+}
+.modal_button{
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: #24cca7;
+  border-radius:50px;
+  border: none;
+}
+.modal_button:hover{
+  background-color: red;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -69,9 +103,6 @@ padding-bottom: 50px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-  }
-  .aside{
-display: none;
   }
   .body{
    justify-content: center;

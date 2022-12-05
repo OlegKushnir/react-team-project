@@ -17,7 +17,7 @@ import css from './App.module.css';
 
 
 
-const Register = lazy(() => import('../Auth/Register'));
+const Register = lazy(() => import('../Auth/RegistrationForm'));
 const Login = lazy(() => import('../Auth/Login'));
 const Wallet = lazy(() => import('../Wallet/Wallet'));
 const Statistics = lazy(() => import('../Wallet/Statistics/Statistics'));

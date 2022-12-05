@@ -28,7 +28,6 @@ export const LoginApi = createAsyncThunk(
 export const RegisterApi = createAsyncThunk(
   'auth/register',
   async (sing, { rejectWithValue }) => {
-    console.log(sing);
     try {
       const { data } = await axios.post('auth/sign-up', sing);
       token.set(data.token);
