@@ -1,5 +1,5 @@
 import register from '../../images/currency/register.png';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { RegisterApi } from 'redux/AuthRedux/operations';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,21 +8,29 @@ import Media from 'react-media';
 import { useState } from 'react';
 import Photo from './AuthPhoto';
 import RegistrationPage from './RegistrationPage';
-import ModalAuth from './ModalAuth';
-import { getAuthToken } from 'redux/AuthRedux/selectors';
 
+import React from 'react';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const mediaQueriesAuth = {
   mobile: '(min-width: 320px) and (max-width: 767px)',
   tablet: '(min-width: 768px) and (max-width: 1279px)',
   desktop: '(min-width: 1280px)',
 };
 const Register = () => {
-  const Token = useSelector(getAuthToken);
   const [chek, setChek] = useState();
-  const [text, setText] = useState(
-    'The password must contain from 6 to 12 characters and the name from 1 to 12 letters'
-  );
-  const [close, setClose] = useState({isEror: true, isText: ""});
+  const notify = e =>
+    toast.error(e, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
@@ -30,6 +38,7 @@ const Register = () => {
     const beginWithoutDigit = /^\D.*$/;
     const withoutSpecialChars = /^[^-() /]*$/;
     const containsLetters = /^.*[a-zA-Z]+.*$/;
+
     if (
       password.length >= 6 &&
       password.length <= 12 &&
@@ -43,16 +52,14 @@ const Register = () => {
       ) {
         password === userpassword
           ? dispatch(RegisterApi({ email, username, password }))
-          : setText('The password does not match');
+          : notify('The password does not match');
       } else {
-        setClose(true);
-        setText(
+        notify(
           'Your password is misspelled, it must contain letters and numbers '
         );
       }
     } else {
-      setClose(true);
-      setText(
+      notify(
         'The password must contain from 6 to 12 characters and the name from 1 to 12 letters'
       );
     }
@@ -75,16 +82,7 @@ const Register = () => {
       setChek(good);
     }
   };
-  const handleClose = e => {
-    setClose(e => false);
-  };
-  const handleOpen = e => {
-    setClose(true);
-  };
-  const handlText = e => {
-    setText(e)
-    Token &&  setClose(true);
-  };
+
   return (
     <div className={s.section}>
       <Media queries={mediaQueriesAuth}>
@@ -92,15 +90,14 @@ const Register = () => {
           (matches.tablet || matches.desktop) && <Photo img={register} />
         }
       </Media>
-      {close && <ModalAuth handleClose={handleClose} text={text} />}
       <div className={s.body}>
         <RegistrationPage
           handleSubmit={handleSubmit}
           handlePassword={handlePassword}
           chek={chek}
-          handlText={handlText}
         />
       </div>
+      <ToastContainer />
     </div>
   );
 };

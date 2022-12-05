@@ -9,16 +9,27 @@ import login from '../../images/currency/login.png';
 import Photo from './AuthPhoto';
 import { mediaQueriesAuth } from './RegistrationForm';
 import Media from 'react-media';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
   const dispatch = useDispatch();
+  const notify = e =>
+    toast.error(e, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
   const handleSubmit = e => {
     const { password } = e;
-    if (password.length >= 6 && password.length <= 12) {
-      console.log("login");
-      dispatch(LoginApi(e));
-    } else {
-      return console.log('The password must contain from 6 to 12');
-    }
+    password.length >= 6 && password.length <= 12
+      ? dispatch(LoginApi(e))
+      : notify('The password must contain from 6 to 12');
   };
   return (
     <div className={s.section}>
@@ -45,7 +56,6 @@ const Login = () => {
               ) {
                 errors.email = 'Invalid email address';
               }
-              console.log(errors);
               return errors;
             }}
             onSubmit={e => {
@@ -91,6 +101,7 @@ const Login = () => {
           </Formik>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

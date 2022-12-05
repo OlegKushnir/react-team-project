@@ -4,8 +4,9 @@ import { NavLink } from 'react-router-dom';
 import sprite from '../Navigation/sprite.svg';
 import sp from './Auth.svg';
 
+import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
-const RegistrationPage = ({ handlePassword, handleSubmit, chek  ,handlText}) => {
+const RegistrationPage = ({ handlePassword, handleSubmit, chek }) => {
   return (
     <div className={s.box}>
       <div className={s.logo}>
@@ -21,14 +22,14 @@ const RegistrationPage = ({ handlePassword, handleSubmit, chek  ,handlText}) => 
           userpassword: '',
         }}
         validate={({ password, userpassword, email }) => {
-            handlePassword(password);
-            const errors = {};
-            if (!email) {
-              errors.email = 'Required';
-            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3,}$/i.test(email)) {
-                handlText( 'Invalid email address');
-            }
-            return errors;
+          handlePassword(password);
+          const errors = {};
+          if (!email) {
+            errors.email = 'Required';
+          } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3,}$/i.test(email)) {
+            errors.email ='Invalid email address';
+          }
+          return errors;
         }}
         onSubmit={handleSubmit}
       >
@@ -104,8 +105,8 @@ const RegistrationPage = ({ handlePassword, handleSubmit, chek  ,handlText}) => 
   );
 };
 RegistrationPage.propTypes = {
-    handlePassword: PropTypes.func.isRequired,
-    handleSubmit: PropTypes.func.isRequired,
-    chek: PropTypes.object,
-  };
+  handlePassword: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  chek: PropTypes.object,
+};
 export default RegistrationPage;
