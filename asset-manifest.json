@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-team-project/static/css/main.5a4eb7c5.css",
-    "main.js": "/react-team-project/static/js/main.86cad2d2.js",
+    "main.js": "/react-team-project/static/js/main.2e72c5de.js",
     "static/css/222.31e0ffc8.chunk.css": "/react-team-project/static/css/222.31e0ffc8.chunk.css",
     "static/js/222.1705c844.chunk.js": "/react-team-project/static/js/222.1705c844.chunk.js",
     "static/css/32.31e0ffc8.chunk.css": "/react-team-project/static/css/32.31e0ffc8.chunk.css",
@@ -35,7 +35,7 @@
     "static/media/minus.svg": "/react-team-project/static/media/minus.c1930871236002c803c7.svg",
     "static/media/selectArrow.svg": "/react-team-project/static/media/selectArrow.77b989b3724c69122981.svg",
     "main.5a4eb7c5.css.map": "/react-team-project/static/css/main.5a4eb7c5.css.map",
-    "main.86cad2d2.js.map": "/react-team-project/static/js/main.86cad2d2.js.map",
+    "main.2e72c5de.js.map": "/react-team-project/static/js/main.2e72c5de.js.map",
     "222.31e0ffc8.chunk.css.map": "/react-team-project/static/css/222.31e0ffc8.chunk.css.map",
     "222.1705c844.chunk.js.map": "/react-team-project/static/js/222.1705c844.chunk.js.map",
     "32.31e0ffc8.chunk.css.map": "/react-team-project/static/css/32.31e0ffc8.chunk.css.map",
@@ -54,6 +54,6 @@
   },
   "entrypoints": [
     "static/css/main.5a4eb7c5.css",
-    "static/js/main.86cad2d2.js"
+    "static/js/main.2e72c5de.js"
   ]
 }
