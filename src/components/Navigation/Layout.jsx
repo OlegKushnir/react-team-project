@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import {
   getAuthUser,
   getAuthIsLoggedIn,
-} from '../../redux/AuthRedux/selectors';
+} from '../../redux/auth/selectors';
 import { NavLink } from 'react-router-dom';
 import s from './Navigation.module.css';
 import sprite from '../../images/sprite.svg';

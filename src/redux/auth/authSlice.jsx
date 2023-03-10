@@ -1,5 +1,5 @@
 const { createSlice } = require('@reduxjs/toolkit/dist');
-const { LoginApi, fetchCurrentUser, RegisterApi, ResetApi, refreshBalance } = require('./operations');
+const { loginApi, fetchCurrentUser, registerApi, resetApi, refreshBalance } = require('./operations');
 
 const handlePending = state => {
   state.registerUser = false;
@@ -25,27 +25,27 @@ const auth = createSlice({
     isFetchingCurrentUser: false
   },
   extraReducers: {
-    [LoginApi.pending]: handlePending,
-    [LoginApi.rejected]: handleRejected,
-    [LoginApi.fulfilled](state, action) {
+    [loginApi.pending]: handlePending,
+    [loginApi.rejected]: handleRejected,
+    [loginApi.fulfilled](state, action) {
       state.username = action.payload.user.username;
       state.token = action.payload.token;
       state.isLoggedIn = true;
       state.balance = action.payload.user.balance;
       state.error = null;
     },
-    [RegisterApi.pending]: handlePending,
-    [RegisterApi.rejected]: handleRejected,
-    [RegisterApi.fulfilled](state, action) {
+    [registerApi.pending]: handlePending,
+    [registerApi.rejected]: handleRejected,
+    [registerApi.fulfilled](state, action) {
       state.username = action.payload.user.username;
       state.token = action.payload.token;
       state.isLoggedIn = true;
       state.balance = action.payload.user.balance;
       state.error = null;
     },
-    [ResetApi.pending]: handlePending,
-    [ResetApi.rejected]: handleRejected,
-    [ResetApi.fulfilled](state, action) {
+    [resetApi.pending]: handlePending,
+    [resetApi.rejected]: handleRejected,
+    [resetApi.fulfilled](state, action) {
         state.username = '';
         state.token = null;
         state.isLoggedIn = false;

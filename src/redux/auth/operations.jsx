@@ -12,7 +12,7 @@ const token = {
   },
 };
 
-export const LoginApi = createAsyncThunk(
+export const loginApi = createAsyncThunk(
   'auth/login',
   async (sign, { rejectWithValue }) => {
     try {
@@ -25,10 +25,10 @@ export const LoginApi = createAsyncThunk(
   }
 );
 
-export const RegisterApi = createAsyncThunk(
+export const registerApi = createAsyncThunk(
   'auth/register',
   async (sing, { rejectWithValue }) => {
-    console.log(sing);
+    // console.log(sing);
     try {
       const { data } = await axios.post('auth/sign-up', sing);
       token.set(data.token);
@@ -39,7 +39,7 @@ export const RegisterApi = createAsyncThunk(
   }
 );
 
-export const ResetApi = createAsyncThunk(
+export const resetApi = createAsyncThunk(
   'auth/Signout',
   async (_, { rejectWithValue }) => {
     try {

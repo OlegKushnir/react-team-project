@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { ResetApi } from '../../redux/AuthRedux/operations';
+import { resetApi } from '../../redux/auth/operations';
 import s from './ModalLogout.module.css';
 
 export function ModalLogOut({ setIsModalOpen }) {
@@ -22,7 +22,7 @@ export function ModalLogOut({ setIsModalOpen }) {
   }
 
   const handleModalClose = () => {
-    dispatch(ResetApi());
+    dispatch(resetApi());
     setIsModalOpen(false);
   };
 

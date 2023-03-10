@@ -11,7 +11,7 @@ import {
   incomeSummary,
 } from 'redux/statistics/statisticsSelectors';
 import s from './Statistics.module.css';
-import { getAuthBalance } from 'redux/AuthRedux/selectors';
+import { getAuthBalance } from 'redux/auth/selectors';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);

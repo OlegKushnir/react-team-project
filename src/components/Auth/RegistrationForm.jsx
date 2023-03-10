@@ -1,6 +1,6 @@
 import register from '../../images/currency/register.png';
 import { useDispatch } from 'react-redux';
-import { RegisterApi } from '../../redux/AuthRedux/operations';
+import { registerApi } from '../../redux/auth/operations';
 
 import 'react-toastify/dist/ReactToastify.css';
 import s from './Auth.module.css';
@@ -36,7 +36,7 @@ const Register = () => {
 
   const handleSubmit = e => {
     const { email, username, password, userpassword } = e;
-    const beginWithoutDigit = /^\D.*$/;
+    // const beginWithoutDigit = /^\D.*$/;
     const withoutSpecialChars = /^[^-() /]*$/;
     const containsLetters = /^.*[a-zA-Z]+.*$/;
 
@@ -47,12 +47,12 @@ const Register = () => {
       username.length <= 12
     ) {
       if (
-        beginWithoutDigit.test(password) &&
+        
         withoutSpecialChars.test(password) &&
         containsLetters.test(password)
       ) {
         password === userpassword
-          ? dispatch(RegisterApi({ email, username, password }))
+          ? dispatch(registerApi({ email, username, password }))
           : notify('The password does not match');
       } else {
         notify(

@@ -23,7 +23,7 @@ const DashboardPage = () => {
   const location = useLocation();
   const { pathname } = location;
   const isHomePage = pathname === '/wallet/home';
-  console.log(location);
+  // console.log(location);
   return (
     <>
       <section className={css.container}>

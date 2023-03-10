@@ -1,18 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { authSlice } from './AuthRedux/AuthSlice';
+import { authSlice } from './auth/authSlice';
 import { transactionsReducer } from './transactions/transactions-slice';
-
-// const authSlice = createSlice({
-//   name: 'auth',
-//   initialState: {
-//     isLoggedIn: false,
-//   },
-//   extraReducers: {
-
-//   },
-// });
-// authSlice.reducer,
-// export const getIsLoggedIn = state => state.auth.isLoggedIn;
 
 import storage from 'redux-persist/lib/storage';
 import {

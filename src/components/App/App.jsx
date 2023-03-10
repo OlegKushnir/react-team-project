@@ -8,10 +8,10 @@ import { Currency } from '../DashboardPage/Currency/Currency';
 import PrivateRoute from '../PrivateRoute';
 import PublicRoute from '../PublicRoute';
 
-import { getIsFetchingCurrent } from '../../redux/AuthRedux/selectors';
+import { getIsFetchingCurrent } from '../../redux/auth/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchCurrentUser } from '../../redux/AuthRedux/operations';
+import { fetchCurrentUser } from '../../redux/auth/operations';
 import './App.module.css';
 
 const Register = lazy(() => import('../Auth/RegistrationForm'));
