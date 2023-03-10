@@ -2,16 +2,16 @@ import React from 'react';
 import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Media from 'react-media';
-import Layout from 'components/Navigation/Layout';
-import { Currency } from 'components/DashboardPage/Currency/Currency';
+import Layout from '../Navigation/Layout';
+import { Currency } from '../DashboardPage/Currency/Currency';
 
-import PrivateRoute from 'components/PrivateRoute';
-import PublicRoute from 'components/PublicRoute';
+import PrivateRoute from '../PrivateRoute';
+import PublicRoute from '../PublicRoute';
 
-import { getIsFetchingCurrent } from 'redux/AuthRedux/selectors';
+import { getIsFetchingCurrent } from '../../redux/AuthRedux/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchCurrentUser } from 'redux/AuthRedux/operations';
+import { fetchCurrentUser } from '../../redux/AuthRedux/operations';
 import './App.module.css';
 
 const Register = lazy(() => import('../Auth/RegistrationForm'));

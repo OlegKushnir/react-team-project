@@ -10,8 +10,8 @@ import sprite from '../../images/sprite.svg';
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { useState } from 'react';
-import { ModalLogOut } from 'components/Navigation/ModalLogout';
-import { mediaQueries } from 'common/mediaQueries';
+import { ModalLogOut } from '../../components/Navigation/ModalLogout';
+import { mediaQueries } from '../../common/mediaQueries';
 
 export default function Layout() {
   const [isModalOpen, setIsModalOpen] = useState(false);

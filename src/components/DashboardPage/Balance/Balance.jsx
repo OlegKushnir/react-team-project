@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { selectTransactions } from 'redux/transactions/transactions-selectors';
+import { selectTransactions } from '../../../redux/transactions/transactions-selectors';
 import { getAuthBalance } from '../../../redux/AuthRedux/selectors';
 import s from './Balance.module.css';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { refreshBalance } from 'redux/AuthRedux/operations';
+import { refreshBalance } from '../../../redux/AuthRedux/operations';
 
 const Balance = () => {
   const apiBalance = useSelector(getAuthBalance);

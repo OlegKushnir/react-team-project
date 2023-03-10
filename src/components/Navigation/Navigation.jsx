@@ -1,7 +1,7 @@
 import Media from 'react-media';
 import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { mediaQueries } from 'common/mediaQueries';
+import { mediaQueries } from '../../common/mediaQueries';
 import s from './Navigation.module.css';
 import sprite from '../../images/sprite.svg';
 

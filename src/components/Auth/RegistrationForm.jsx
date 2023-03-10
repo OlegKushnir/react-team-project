@@ -1,6 +1,6 @@
 import register from '../../images/currency/register.png';
 import { useDispatch } from 'react-redux';
-import { RegisterApi } from 'redux/AuthRedux/operations';
+import { RegisterApi } from '../../redux/AuthRedux/operations';
 
 import 'react-toastify/dist/ReactToastify.css';
 import s from './Auth.module.css';

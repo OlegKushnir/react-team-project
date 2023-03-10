@@ -1,6 +1,6 @@
 import s from './Currency.module.css';
 import { useState, useEffect } from 'react';
-import Loader from 'components/Loader';
+import Loader from '../../../components/Loader';
 import axios from "axios";
 
 export const Currency = () => {

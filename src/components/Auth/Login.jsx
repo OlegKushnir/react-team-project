@@ -2,7 +2,7 @@ import { Formik, Field, Form } from 'formik';
 import s from './Auth.module.css';
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { LoginApi } from 'redux/AuthRedux/operations';
+import { LoginApi } from '../../redux/AuthRedux/operations';
 import sprite from '../../images/sprite.svg';
 import login from '../../images/currency/login.png';
 import Photo from './AuthPhoto';
