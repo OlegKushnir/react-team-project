@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { authSlice } from './auth/authSlice';
 import { transactionsReducer } from './transactions/transactions-slice';
+import { statisticsReducer } from './statistics/statisticsSlice';
 
 import storage from 'redux-persist/lib/storage';
 import {
@@ -13,7 +14,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import { statisticsReducer } from './statistics/statisticsSlice';
+
 
 const authPersistConfig = {
   key: 'auth',

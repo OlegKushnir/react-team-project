@@ -1,21 +1,21 @@
 import { useFormik } from 'formik';
 import DatePicker from 'react-datepicker';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleModal } from 'redux/transactions/transactions-slice';
 import { useCallback, useEffect, useState } from 'react';
 import * as yup from 'yup';
 import 'react-datepicker/dist/react-datepicker.css';
 import s from './ModalAddTransaction.module.css';
+import { toggleModal } from '../../../redux/transactions/transactions-slice';
 import {
   addTransaction,
   editTransaction,
   getCategories,
   getTransactions,
-} from 'redux/transactions/transactions-operations';
+} from '../../../redux/transactions/transactions-operations';
+import { selectTransactions } from '../../../redux/transactions/transactions-selectors';
 import { CustomDatePicker } from './CustomDatePicker';
 import { ModalSelect } from './ModalSelect';
 import { createPortal } from 'react-dom';
-import { selectTransactions } from 'redux/transactions/transactions-selectors';
 
 export function ModalAddTransaction({
   editModalOpen,
@@ -86,11 +86,11 @@ export function ModalAddTransaction({
         comment,
         categoryId: type ? categoryId : '063f1132-ba5d-42b4-951d-44011ca46262',
         amount: type ? Number(amount) * -1 : Number(amount),
-
         type: type ? 'EXPENSE' : 'INCOME',
       };
+      
       editModalOpen
-        ? dispatch(editTransaction({ transactionID, newTransaction }))
+        ? dispatch(editTransaction({transactionID, newTransaction}))
         : dispatch(addTransaction(newTransaction));
       closeModal();
     },
@@ -128,7 +128,16 @@ export function ModalAddTransaction({
             <div className={values.type ? s.expense : s.inactive}>Expense</div>
           </div>
 
-          {values.type && <ModalSelect setCategoryId={setCategoryId} />}
+          {values.type &&
+            (editModalOpen ? (
+              <ModalSelect
+                categoryIdd={currentTransaction?.categoryId}
+                setCategoryId={setCategoryId}
+              />
+            ) : (
+              <ModalSelect setCategoryId={setCategoryId} />
+            ))
+            }
           {touched.categoryId && errors.categoryId ? (
             <div className={s.validatoinError}>{errors.categoryId}</div>
           ) : null}

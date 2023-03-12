@@ -19,7 +19,7 @@ import { ModalAddTransaction } from './ModalAddTransaction';
 import s from './Transactions.module.css';
 import { mediaQueries } from 'common/mediaQueries';
 import sprite from '../../../images/transactions/transactionSprite.svg';
-import { toggleModal } from 'redux/transactions/transactions-slice';
+// import { toggleModal } from 'redux/transactions/transactions-slice';
 
 let transactionID = '';
 
@@ -382,7 +382,7 @@ const Transactions = () => {
                           idx === 0 ? s.firstTableData : ''
                         } ${idx === arr.length - 1 ? s.lastTableData : ''}`}
                       >
-                        <button
+                        {/* <button
                           className={s.editBtn}
                           onClick={() => {
                             transactionID = id;
@@ -394,7 +394,7 @@ const Transactions = () => {
                           <svg className={s.editBtnIcon} width={15} height={15}>
                             <use href={`${sprite}#icon-pencil`}></use>
                           </svg>
-                        </button>
+                        </button> */}
                         <button
                           className={s.editBtn}
                           onClick={() => onDeleteTransaction(id)}

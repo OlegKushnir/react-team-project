@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import Select from 'react-select';
-import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getTransactionsSummary } from 'redux/statistics/statisticsOperations';
+import { getTransactionsSummary } from '../../../redux/statistics/statisticsOperations';
 import {
   categoriesSummary,
   expenseSummary,
   incomeSummary,
-} from 'redux/statistics/statisticsSelectors';
+} from '../../../redux/statistics/statisticsSelectors';
 import s from './Statistics.module.css';
-import { getAuthBalance } from 'redux/auth/selectors';
+import { getAuthBalance } from '../../../redux/auth/selectors';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -21,11 +20,10 @@ const Statistics = () => {
   const expense = useSelector(expenseSummary);
   const income = useSelector(incomeSummary);
   const balance = useSelector(getAuthBalance);
-
   const [selectedMounth, setSelectedMounth] = useState(null);
   const [selectedYear, setSelectedYear] = useState({
-    value: '2022',
-    label: '2022',
+    value: new Date().getFullYear(),
+    label: new Date().getFullYear(),
   });
 
   const dispatch = useDispatch();
@@ -57,6 +55,7 @@ const Statistics = () => {
     { value: '', label: 'All' },
   ];
   const optionsYear = [
+    { value: '2022', label: '2023' },
     { value: '2022', label: '2022' },
     { value: '2021', label: '2021' },
     { value: '2020', label: '2020' },

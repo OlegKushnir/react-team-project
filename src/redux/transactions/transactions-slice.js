@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import {
   getTransactions,
   addTransaction,
+  editTransaction,
   deleteTransaction,
   getCategories,
 } from './transactions-operations';
@@ -40,6 +41,15 @@ const transactionsSlice = createSlice({
       .addCase(addTransaction.pending, handlePending)
       .addCase(addTransaction.fulfilled, (state, { payload }) => {
         state.transactions.push(payload);
+        state.error = null;
+        state.isLoading = false;
+      })
+      .addCase(editTransaction.pending, handlePending)
+      .addCase(editTransaction.fulfilled, (state, { payload }) => {
+        const index = state.transactions.findIndex(
+          transaction => transaction.id === payload.id
+        );
+        state.transactions[index] = { ...payload };
         state.error = null;
         state.isLoading = false;
       })
